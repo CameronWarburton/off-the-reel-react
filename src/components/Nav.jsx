@@ -1,6 +1,15 @@
 import React from "react";
 import OffTheReelLogo from "../assets/Off The Reel Logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+
+function openMenu() {
+  document.body.classList += " menu--open"
+  }
+
+  function closeMenu() {
+    document.body.classList.remove('menu--open')
+    }
 
 function redirectToPage() {
   window.open("https://cameronwarburton.github.io/Advanced-E-Portfolio/", "_blank");
@@ -29,26 +38,26 @@ const Nav = () => {
           </button>
         </li>
       </ul>
-      <button className="btn__menu" onclick="openMenu()">
-        <i className="fas fa-bars"></i>
+      <button className="btn__menu" onClick={openMenu}>
+        <FontAwesomeIcon icon="bars"/>
       </button>
       <div className="menu__backdrop">
-        <button className="btn__menu btn__menu--close" onclick="closeMenu()">
-          <i className="fas fa-times"></i>
+        <button className="btn__menu btn__menu--close" onClick={closeMenu}>
+          <FontAwesomeIcon icon="times"/>
         </button>
         <ul className="menu__links">
           <li className="menu__list">
-            <a href="#" className="menu__link" onclick="closeMenu()">
+            <Link to="/" className="menu__link link__hover-effect" onClick={closeMenu}>
               Home
-            </a>
+            </Link>
           </li>
           <li className="menu__list">
-            <a href="#featured" className="menu__link" onclick="closeMenu()">
+            <Link to="/Movies" className="menu__link link__hover-effect" onClick={closeMenu}>
               Movies
-            </a>
+            </Link>
           </li>
           <li className="menu__list">
-            <button className="btn" onclick="redirectToPage()">
+            <button className="btn" onClick={redirectToPage}>
               Contact
             </button>
           </li>

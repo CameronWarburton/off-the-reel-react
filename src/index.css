@@ -74,7 +74,7 @@ body {
 }
 
 .blue {
-    color: #0e0cf3;
+    color: #0c4df3;
 }
 
 .btn__menu {
@@ -129,7 +129,6 @@ body {
 }
 
 .menu__link:hover {
-    text-decoration: underline #0e0cf3;
     color: #0e0cf3;
 }
 
@@ -138,7 +137,7 @@ body {
     right: 20px;
     top: 60px;
     padding: 8px;
-    color: white;
+    color: black;
 }
 
 .fa-times {

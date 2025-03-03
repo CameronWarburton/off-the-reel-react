@@ -17,7 +17,7 @@ function redirectToPage() {
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className="row">
       <Link to="/">
         <img className="nav__logo" src={OffTheReelLogo} alt="Off The Reel Logo" />
       </Link>
@@ -28,7 +28,7 @@ const Nav = () => {
           </Link>
         </li>
         <li className="nav__link">
-          <Link to="/featured" className="link__hover-effect">
+          <Link to="/Movies" className="link__hover-effect">
             Movies
           </Link>
         </li>

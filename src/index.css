@@ -160,12 +160,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px auto;
+    margin: 12px auto;
 }
 
 .nav__logo {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
 }
 
 .nav__links {

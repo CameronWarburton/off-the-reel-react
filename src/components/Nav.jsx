@@ -2,6 +2,10 @@ import React from "react";
 import OffTheReelLogo from "../assets/Off The Reel Logo.png";
 import { Link } from "react-router-dom";
 
+function redirectToPage() {
+  window.open("https://cameronwarburton.github.io/Advanced-E-Portfolio/", "_blank");
+}
+
 const Nav = () => {
   return (
     <nav>
@@ -10,17 +14,17 @@ const Nav = () => {
       </Link>
       <ul className="nav__links">
         <li className="nav__link">
-          <a href="/" className="link__hover-effect">
+          <Link to='/'className="link__hover-effect">
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav__link">
-          <a href="#featured" className="link__hover-effect">
+          <Link to="/featured" className="link__hover-effect">
             Movies
-          </a>
+          </Link>
         </li>
         <li className="nav__link">
-          <button className="btn" onclick="redirectToPage()">
+          <button className="btn" onClick={redirectToPage}>
             Contact
           </button>
         </li>

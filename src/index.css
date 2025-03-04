@@ -79,6 +79,7 @@ body {
 
 .btn__menu {
     background-color: transparent;
+    padding-right: 20px;
     font-size: 40px;
     text-align: center;
     border: none;
@@ -134,8 +135,8 @@ body {
 
 .btn__menu--close {
     position: absolute;
-    right: 20px;
-    top: 60px;
+    right: 16px;
+    top: 50px;
     padding: 8px;
     color: black;
 }
@@ -238,7 +239,7 @@ nav {
     align-items: center;
 }
 
-/* FEATURED FILMS  */
+/* Movies Page  */
 
 .featured__title {
     display: flex;
@@ -263,7 +264,7 @@ nav {
 .film__img {
     max-height: 500px;
     transition: all 300ms ease;
-    cursor: not-allowed;
+    cursor: pointer;
     margin-bottom: 32px;
 }
 
@@ -284,7 +285,7 @@ nav {
 
 .films__title:hover {
     text-decoration: underline;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 /* Small phones, tablets, large smartphones */

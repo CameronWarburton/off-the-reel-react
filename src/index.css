@@ -17,6 +17,10 @@ html {
     padding-bottom: 100px;
 }
 
+span {
+    padding-left: 10px;
+}
+
 h1 {
     font-size: 50px;
 }
@@ -307,6 +311,13 @@ nav {
 .films__title:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.search__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px
 }
 
 /* Small phones, tablets, large smartphones */

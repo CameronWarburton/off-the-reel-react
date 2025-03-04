@@ -9,9 +9,9 @@ function MovieList({ movies, isLoading }) {
     <div className="films-list">
       {movies.map((movie) => (
         <div className="film" key={movie.imbID}>
-            <img className="film__img" src={movie.poster} alt={movie.title} />
-            <p className="films__title">{movie.title}</p>
-            <p className="films__body">Year: {movie.year}</p>
+            <img className="film__img" src={movie.Poster} alt={movie.Title} />
+            <p className="films__title">{movie.Title}</p>
+            <p className="films__body">Year: {movie.Year}</p>
         </div>
       ))}
     </div>

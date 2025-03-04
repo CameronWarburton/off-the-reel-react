@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieList from "../components/MovieList";
 
-async function fetchMovies(query, setMovies, setLoading) {
+const fetchMovies = async (query, setMovies, setLoading) => {
   setLoading(true);
   try {
     const response = await fetch(
       `https://www.omdbapi.com/?s=${query}&apikey=7f137b53`
     );
     const data = await response.json();
-    setMovies(data.Search || []);
+    const movieResults = data.Search ? data.Search.slice(0, 6) : [];
+    setMovies(movieResults);
   } catch (error) {
     console.error("Error fetching movies:", error);
+    setMovies([]);
   }
   setLoading(false);
 }

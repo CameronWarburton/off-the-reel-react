@@ -39,7 +39,13 @@ const Movies = () => {
   return (
     <div>
       <SearchBar />
-      <h1 className="search__title">Movie Results for<span className="blue">"{query}"</span></h1>
+      <h1 className="search__title">
+        {query ? (
+        <>Movie/Series Results for<span className="blue">"{query}"</span></>
+        ) : (
+        <>Featured <span className="blue">Movies</span></>
+        )}
+</h1>
       <MovieList movies={movies} isLoading={isLoading} />
     </div>
   );

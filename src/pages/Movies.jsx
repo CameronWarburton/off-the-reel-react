@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieList from "../components/MovieList";
 import SearchBar from "../components/SearchBar";
-import featuredMovies  from "../featuredMovies";
+import featuredMovies from "../featuredMovies";
 
 const fetchMovies = async (query, setMovies, setLoading) => {
   if (!query) {
@@ -24,7 +24,7 @@ const fetchMovies = async (query, setMovies, setLoading) => {
     setMovies([]);
   }
   setLoading(false);
-}
+};
 
 const Movies = () => {
   const [searchParams] = useSearchParams();
@@ -41,11 +41,15 @@ const Movies = () => {
       <SearchBar />
       <h1 className="search__title">
         {query ? (
-        <>Movie/Series Results for<span className="blue">"{query}"</span></>
+          <>
+            Movie/Series Results for<span className="blue">"{query}"</span>
+          </>
         ) : (
-        <>Featured <span className="blue">Movies</span></>
+          <>
+            Featured <span className="blue">Movies</span>
+          </>
         )}
-</h1>
+      </h1>
       <MovieList movies={movies} isLoading={isLoading} />
     </div>
   );

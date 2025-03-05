@@ -3,8 +3,14 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieList from "../components/MovieList";
 import SearchBar from "../components/SearchBar";
+import featuredMovies  from "../featuredMovies";
 
 const fetchMovies = async (query, setMovies, setLoading) => {
+  if (!query) {
+    setMovies(featuredMovies);
+    return;
+  }
+
   setLoading(true);
   try {
     const response = await fetch(
@@ -22,7 +28,7 @@ const fetchMovies = async (query, setMovies, setLoading) => {
 
 const Movies = () => {
   const [searchParams] = useSearchParams();
-  const query = searchParams.get("query") || "Fast";
+  const query = searchParams.get("query") || "";
   const [movies, setMovies] = useState([]);
   const [isLoading, setLoading] = useState(false);
 

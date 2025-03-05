@@ -213,6 +213,10 @@ nav {
 
 /* LANDING PAGE */
 
+.header {
+    margin-bottom: 30px;
+}
+
 .title {
     font-size: 80px;
     margin-bottom: 12px;
@@ -226,7 +230,6 @@ nav {
     background-color: rgba(207, 199, 199, 0.2);
     border-radius: 60px;
     padding: 10px 20px;
-    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -265,6 +268,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 /* Movies Page  */

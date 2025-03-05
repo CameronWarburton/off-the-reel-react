@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieList from "../components/MovieList";
+import SearchBar from "../components/SearchBar";
 
 const fetchMovies = async (query, setMovies, setLoading) => {
   setLoading(true);
@@ -31,6 +32,7 @@ const Movies = () => {
 
   return (
     <div>
+      <SearchBar />
       <h1 className="search__title">Movie Results for<span className="blue">"{query}"</span></h1>
       <MovieList movies={movies} isLoading={isLoading} />
     </div>

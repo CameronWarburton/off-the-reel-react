@@ -304,6 +304,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 8px;
+    cursor: pointer;
 }
 
 .films__body {
@@ -325,6 +326,21 @@ nav {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px
+}
+
+/* Movies Info */
+
+.movie__details {
+    text-align: center;
+    padding: 20px;
+}
+
+.movie__text {
+    font-weight: bold;
+}
+
+.movie__title {
+    color: #0c4df3;
 }
 
 /* Small phones, tablets, large smartphones */

@@ -33,7 +33,18 @@ useEffect(() => {
    }
 
   return (
-    <div>MovieInfo</div>
+    <div className='movie__details'>
+      <h1 className='movie__title'>{movie.Title}</h1>
+      <img src={movie.Poster} alt={movie.Title} className='movie__poster' />
+      <p className='movie__plot'>{movie.Plot}</p>
+      <div className='movie__text'>
+      <p>Year: {movie.Year}</p>
+      <p>Actors: {movie.Genre}</p>
+      <p>Director: {movie.Director}</p>
+      <p>Actors: {movie.Actors}</p>
+      <p>Rating: {movie.imdbRating}</p>
+      </div>
+    </div>
   )
 }
 

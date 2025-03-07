@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MovieDetailsSkeleton from "../components/MovieDetailsSkeleton";
 
 const MovieInfo = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ const MovieInfo = () => {
   }, [id]);
 
   if (isLoading) {
-    return <p>Loading movie details...</p>;
+    return <MovieDetailsSkeleton />;
   }
 
   if (!movie) {
@@ -43,7 +44,7 @@ const MovieInfo = () => {
         <p className="movie__plot">{movie.Plot}</p>
         <div className="movie__text">
           <p>Year: {movie.Year}</p>
-          <p>Actors: {movie.Genre}</p>
+          <p>Genre: {movie.Genre}</p>
           <p>Director: {movie.Director}</p>
           <p>Actors: {movie.Actors}</p>
           <p>Rating: {movie.imdbRating}</p>

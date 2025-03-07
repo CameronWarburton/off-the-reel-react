@@ -7,37 +7,37 @@ import InfinityWar from "./assets/Avengers Infinity War.jpg"
 
 const featuredMovies = [
   {
-    id: 1,
+    imdbID: "tt0848228",
     Title: "Avengers",
     Year: "2012",
     Poster: Avengers,
   },
   {
-    id: 2,
+    imdbID: "tt2395427",
     Title: "Avengers: Age of Ultron",
     Year: "2015",
     Poster: Ultron,
   },
   {
-    id: 3,
+    imdbID: "tt4154756",
     Title: "Avengers: Infinity War",
     Year: "2018",
     Poster: InfinityWar,
   },
   {
-    id: 4,
+    imdbID: "tt4154796",
     Title: "Avengers: Endgame",
     Year: "2019",
     Poster: EndGame,
   },
   {
-    id: 5,
+    imdbID: "tt9362722",
     Title: "Spider-Man: Across The Spider-Verse",
     Year: "2023",
     Poster: SpiderVerse,
   },
   {
-    id: 6,
+    imdbID: "tt1877830",
     Title: "The Batman",
     Year: "2022",
     Poster: TheBatman,

@@ -431,6 +431,29 @@ nav {
     .film {
         width: calc(100% / 2);
     }
+
+    .search__title {
+        font-size: 32px;
+    }
+
+    .movie__details {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+      }
+    
+      .movie__details--left {
+        max-width: 100%; 
+      }
+    
+      .movie__details--poster {
+        width: 80%; 
+        max-width: 400px; 
+      }
+    
+      .movie__details--right {
+        max-width: 90%;
+      }
 }
 
 /* SMALL PHONES */
@@ -458,6 +481,10 @@ nav {
 
     .featured__title {
         font-size: 36px;
+    }
+
+    .search__title {
+        font-size: 28px;
     }
 }
 
